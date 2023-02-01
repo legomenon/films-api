@@ -14,8 +14,11 @@ The API has the following endpoints:
     PATCH /v1/movies/:id: updates a movie by its ID
     DELETE /v1/movies/:id: deletes a movie by its ID
 
-Prerequisites
+Technologies Used
 
-    Go 1.15+
+- PostgreSQL: The application uses PostgreSQL as its database management system.
+- Docker: The application can be run as a Docker container.
+- migrate: A database migration tool that helps to manage and apply database schema changes.
+- httprouter: A high-performance HTTP request router that is used as the main router for the application
 
 ## The API will be running on http://localhost:8080.

@@ -1,9 +1,21 @@
 # movie-api go application
 
-handlers:
-  - router.HandlerFunc(http.MethodGet, "/v1/movies", app.listMoviesHandler)
-  - router.HandlerFunc(http.MethodGet, "/v1/healthcheck", app.healthcheckHandler)
-  - router.HandlerFunc(http.MethodPost, "/v1/movies", app.createMovieHandler)
-  - router.HandlerFunc(http.MethodGet, "/v1/movies/:id", app.showMovieHandler)
-  - router.HandlerFunc(http.MethodPatch, "/v1/movies/:id", app.updateMovieHandler)
-  - router.HandlerFunc(http.MethodDelete, "/v1/movies/:id", app.deleteMovieHandler)
+movie-api
+
+A Go application that provides a RESTful API for managing movies.
+Endpoints
+
+The API has the following endpoints:
+
+    GET /v1/movies: retrieves a list of all movies
+    GET /v1/healthcheck: health check endpoint to ensure the service is up and running
+    POST /v1/movies: creates a new movie
+    GET /v1/movies/:id: retrieves a movie by its ID
+    PATCH /v1/movies/:id: updates a movie by its ID
+    DELETE /v1/movies/:id: deletes a movie by its ID
+
+Prerequisites
+
+    Go 1.15+
+
+## The API will be running on http://localhost:8080.
